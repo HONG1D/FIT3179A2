@@ -1,6 +1,6 @@
-﻿State,Capital,Latitude,Longtitude,Total_Domestic_Visitors_000,Receipts_RM_million
-Johor,Johor Bahru,1.478402,103.756835,79984,35443
-Kedah,Alor Setar,6.1281,100.3433,81377,25195
+﻿State,Capital,Latitude,Longtitude,Total_Domestic_Visitors_000,Receipts_RM_million, FlagURL
+Johor,Johor Bahru,1.478402,103.756835,79984,35443, https://raw.githubusercontent.com/HONG1D/FIT3179A2/b338ce1df0ac6bca89b68cc3b19fa5ca0a5a52a5/flags/flags/johor.png
+Kedah,Alor Setar,6.1281,100.3433,81377,25195, 
 Kelantan,Kota Bharu,6.130404,102.235248,52611,20281
 Melaka,Melaka Tengah,2.2718,102.286,78196,31561
 Negeri Sembilan,Seremban,2.7226,101.9415,76779,26157
@@ -15,3 +15,4 @@ Terengganu,Kuala Terengganu,5.315637,103.095697,74012,27132
 Kuala Lumpur,Kuala Lumpur,3.1464,101.6996,294344,58856
 Labuan,Labuan,5.28686,115.249747,2187,1474
 Putrajaya,Putrajaya,2.9229,101.7022,9593,3894
+
