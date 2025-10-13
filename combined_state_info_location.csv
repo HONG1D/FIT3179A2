@@ -1,18 +1,17 @@
 ﻿State,Capital,Latitude,Longtitude,Total_Domestic_Visitors_000,Receipts_RM_million, FlagURL
-Johor,Johor Bahru,1.478402,103.756835,79984,35443, https://raw.githubusercontent.com/HONG1D/FIT3179A2/b338ce1df0ac6bca89b68cc3b19fa5ca0a5a52a5/flags/flags/johor.png
-Kedah,Alor Setar,6.1281,100.3433,81377,25195, 
-Kelantan,Kota Bharu,6.130404,102.235248,52611,20281
-Melaka,Melaka Tengah,2.2718,102.286,78196,31561
-Negeri Sembilan,Seremban,2.7226,101.9415,76779,26157
-Pahang,Kuantan,3.821887,103.332424,96055,37154
-Pulau Pinang,George Town,5.409352,100.336939,79626,30732
-Perak,Ipoh,4.605162,101.07942,108071,35694
-Perlis,Kangar,6.462,100.1685,10577,3012
-Sabah,Kota Kinabalu,5.9587,116.0825,103008,37709
-Sarawak,Kuching,1.5554,110.327,106113,41857
-Selangor,Shah Alam,3.534833,101.1576,168755,70545
-Terengganu,Kuala Terengganu,5.315637,103.095697,74012,27132
-Kuala Lumpur,Kuala Lumpur,3.1464,101.6996,294344,58856
-Labuan,Labuan,5.28686,115.249747,2187,1474
-Putrajaya,Putrajaya,2.9229,101.7022,9593,3894
-
+Johor,Johor Bahru,1.478402,103.756835,79984,35443,https://raw.githubusercontent.com/HONG1D/FIT3179A2/b338ce1df0ac6bca89b68cc3b19fa5ca0a5a52a5/flags/flags/johor.png
+Kedah,Alor Setar,6.1281,100.3433,81377,25195,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/kedah.png
+Kelantan,Kota Bharu,6.130404,102.235248,52611,20281,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/kelantan.png
+Melaka,Melaka Tengah,2.2718,102.286,78196,31561,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/melaka.png
+Negeri Sembilan,Seremban,2.7226,101.9415,76779,26157,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/negeri%20sembilan.png
+Pahang,Kuantan,3.821887,103.332424,96055,37154,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/pahang.png
+Pulau Pinang,George Town,5.409352,100.336939,79626,30732,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/pulau%20pinang.png
+Perak,Ipoh,4.605162,101.07942,108071,35694,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/perak.png
+Perlis,Kangar,6.462,100.1685,10577,3012,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/perlis.png
+Sabah,Kota Kinabalu,5.9587,116.0825,103008,37709,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/sabah.png
+Sarawak,Kuching,1.5554,110.327,106113,41857,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/sarawak.png
+Selangor,Shah Alam,3.534833,101.1576,168755,70545,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/selangor.png
+Terengganu,Kuala Terengganu,5.315637,103.095697,74012,27132,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/terengganu.png
+Kuala Lumpur,Kuala Lumpur,3.1464,101.6996,294344,58856,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/kuala%20lumpur.png
+Labuan,Labuan,5.28686,115.249747,2187,1474,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/labuan.png
+Putrajaya,Putrajaya,2.9229,101.7022,9593,3894,https://raw.githubusercontent.com/HONG1D/FIT3179A2/859f39005b784fae590347fb7a3f6064706d33c7/flags/flags/putrajaya.png
