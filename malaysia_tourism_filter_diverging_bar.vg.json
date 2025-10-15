@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/92e3ceedc40db9537f969f440562815696e0a7bf/long_format_state_visitor_yearly_info.csv"
+  },
+  "params": [
+    {
+      "name": "YearFilter",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2018,
+        "max": 2023,
+        "step": 1,
+        "name": "Filter by Year: "
+      }
+    }
+  ],
+  "transform": [{"filter": "datum.Year == YearFilter"}],
+  "mark": {"type": "bar", "cornerRadiusEnd": 3},
+  "width": "container",
+  "height": 200,
+  "encoding": {
+    "x": {
+      "field": "State",
+      "type": "nominal",
+      "title": "State",
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "field": "Growth_Rate",
+      "type": "quantitative",
+      "title": "Growth Rate (%)",
+      "scale": {"domain": [-100, 200]}
+    },
+    "color": {
+      "field": "Growth_Rate",
+      "type": "quantitative",
+      "scale": {"scheme": "redblue", "domain": [-100, 100]},
+      "legend": {"title": "Growth Rate (%)"}
+    },
+    "tooltip": [
+      {"field": "State", "type": "nominal"},
+      {"field": "Year", "type": "ordinal"},
+      {
+        "field": "Growth_Rate",
+        "title": "Growth Rate (%)",
+        "type": "quantitative",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {"grid": false},
+    "view": {"stroke": "transparent"}
+  }
+}

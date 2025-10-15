@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/ed55118914fd0d746142947c9c107f2694128083/combined_state_info_location.csv"
+  },
+  "params": [
+    {
+      "name": "StateSelection",
+      "select": {"type": "point", "fields": ["State"], "toggle": "true"}
+    }
+  ],
+  "hconcat": [
+    {
+     
+      "width": 1350,
+      "height": "container",
+      "transform": [
+        {"filter": "datum.Total_Domestic_Visitors_000 != null && datum.Receipts_RM_million != null"},
+        {"filter": "datum.Total_Domestic_Visitors_000 > 0 && datum.Receipts_RM_million > 0"}
+      ],
+      "mark": {"type": "image", "width": 30, "height": 30},
+      "encoding": {
+        "x": {
+          "field": "Total_Domestic_Visitors_000",
+          "type": "quantitative",
+          "title": "Total Domestic Visitors ('000)"
+        },
+        "y": {
+          "field": "Receipts_RM_million",
+          "type": "quantitative",
+          "title": "Receipts (RM million)",
+          "axis": {"tickCount": 10}
+        },
+        "url": {"field": "FlagURL", "type": "nominal"},
+        "opacity": {
+          "condition": {"param": "StateSelection", "value": 1},
+          "value": 0.1
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Total_Domestic_Visitors_000", "title": "Visitors ('000)","format": ","},
+          {"field": "Receipts_RM_million", "title": "Receipts (RM million)","format": ","}
+        ]
+      }
+    },
+    {
+      "width": 20,
+      "height": "container",
+      "title": "State",
+      "mark": {"type": "image", "width": 20, "height": 20, "cursor": "pointer"},
+      "encoding": {
+        "y": {
+          "field": "State",
+          "type": "nominal",
+          "axis": {"title": null, "domain": false, "ticks": false},
+          "sort": null
+        },
+        "url": {"field": "FlagURL", "type": "nominal"},
+        "opacity": {
+          "condition": {"param": "StateSelection", "value": 1},
+          "value": 0.2
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null}
+  }
+}

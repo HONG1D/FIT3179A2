@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Malaysia Domestic Tourism: Receipts and Visitors by State",
+    "fontSize": 24,          
+    "fontWeight": "bold"            
+  },
+  "width": "container",
+  "height": "container",
+  "config": {
+    "background": "#83d1f9",
+    "view": {"stroke": "transparent"}
+  },
+  "projection": {"type": "mercator", "center": [108.5, 3], "scale": 3800, "translate": [630, 330]},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/92e3ceedc40db9537f969f440562815696e0a7bf/malaysia.json",
+        "format": {"type": "topojson", "feature": "mytopojson"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/ed55118914fd0d746142947c9c107f2694128083/combined_state_info_location.csv"},
+            "key": "State",
+            "fields": ["Receipts_RM_million"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white"},
+      "encoding": {
+        "color": {
+          "field": "Receipts_RM_million",
+          "type": "quantitative",
+          "scale": {"scheme": "greens"},
+          "title": "Receipts (RM million)"
+        },
+        "tooltip": [
+          {"field": "properties.name", "title": "State"},
+          {"field": "Receipts_RM_million", "title": "Receipts (RM million)","format": ","}
+        ]
+      }
+    },
+    {
+      "data": {"url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/ed55118914fd0d746142947c9c107f2694128083/combined_state_info_location.csv"},
+      "mark": {"type": "circle", "color": "orange", "opacity": 0.6},
+      "encoding": {
+        "longitude": {"field": "Longtitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "size": {
+          "field": "Total_Domestic_Visitors_000",
+          "type": "quantitative",
+          "scale": {"range": [100, 4000]},
+          "title": "Domestic Visitors ('000)"
+        },
+        "tooltip": [
+          {"field": "State", "title": "State"},
+          {"field": "Total_Domestic_Visitors_000", "title": "Visitors ('000)","format": ","}
+        ]
+      }
+    },
+    {
+       "data": {
+        "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/ed55118914fd0d746142947c9c107f2694128083/combined_state_info_location.csv"
+      },
+      "mark": {
+        "type": "text",
+        "dx": -32,
+        "fontSize": 12,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "longitude": {"field": "Longtitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "text": {"field": "State", "type": "nominal"}
+      }
+
+    }
+  ]
+}

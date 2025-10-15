@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/d27be579dd52d873e7e1f9eb69a7f47abd30b004/year_expenditure.csv"
+  },
+  "params": [
+    {
+      "name": "year_start",
+      "value": 2017,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2023,
+        "step": 1,
+        "name": "Start Year: "
+      }
+    },
+    {
+      "name": "year_end",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2023,
+        "step": 1,
+        "name": "End Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.Year >= year_start && datum.Year <= year_end"
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 670,
+      "height": "container",
+      "layer": [
+        {
+          "mark": {"type": "bar", "color": "#a2dbff", "opacity": 0.7},
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "title": "Year",
+              "axis": {"labelAngle": 0}
+            },
+            "y": {
+              "field": "Total_Domestic_Visitors_000",
+              "type": "quantitative",
+              "title": "Total Domestic Visitors ('000)"
+            },
+            "tooltip": [
+              {"field": "Year"},
+              {"field": "Total_Domestic_Visitors_000", "title": "Visitors ('000)","format": ","},
+              {"field": "Total_Expenditure_Rm_Million", "title": "Expenditure (RM million)","format": ","}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "line", "color": "#ff9a15", "strokeWidth": 3, "point": true},
+          "encoding": {
+            "x": {"field": "Year", "type": "ordinal"},
+            "y": {
+              "field": "Total_Expenditure_Rm_Million",
+              "type": "quantitative",
+              "title": "Total Expenditure (RM million)",
+              "axis": {"orient": "right"}
+            }
+          }
+        },
+        {
+          "data": {"values": [{"Year": "2020"}]},
+          "mark": {"type": "rule", "color": "darkorange", "strokeDash": [4, 4], "size": 2},
+          "encoding": {
+            "x": {"field": "Year"}
+          }
+        },
+        {
+          "data": {"values": [{"Year": "2020", "label": "COVID-19 Pandemic"}]},
+          "mark": {"type": "text", "color": "darkorange", "fontSize": 12, "dy": -160, "align": "center","baseline": "bottom"},
+          "encoding": {
+            "x": {"field": "Year"},
+            "text": {"field": "label"}
+          }
+        }, 
+        {
+          "data": {"values": [{"Year": "2021"}]},
+          "mark": {"type": "rule", "color": "red", "strokeDash": [4, 4], "size": 2, "yOffset": 50, "y2Offset": -100},
+          "encoding": {
+            "x": {"field": "Year"}
+          }
+        },
+        {
+          "data": {"values": [{"Year": "2021", "label": "MCO Phase"}]},
+          "mark": {"type": "text", "color": "red", "fontSize": 12, "dy": -110, "align": "center","baseline": "bottom"},
+          "encoding": {
+            "x": {"field": "Year"},
+            "text": {"field": "label"}
+          }
+        }, 
+        {
+          "data": {"values": [{"Year": "2022"}]},
+          "mark": {"type": "rule", "color": "#d5ce11", "strokeDash": [4, 4], "size": 2},
+          "encoding": {
+            "x": {"field": "Year"}, 
+            "y": {"value": -30},
+            "y2": {"value": 300}
+          }
+        },
+        {
+          "data": {"values": [{"Year": "2022", "label": "Cuti-Cuti Malaysia Program"}]},
+          "mark": {"type": "text", "color": "#d5ce11", "fontSize": 12, "dy": -190, "align": "center","baseline": "bottom"},
+          "encoding": {
+            "x": {"field": "Year"},
+            "text": {"field": "label"}
+          }
+        }, 
+        {
+          "data": {"values": [{"Year": "2023"}]},
+          "mark": {"type": "rule", "color": "#04c046", "strokeDash": [4, 4], "size": 2},
+          "encoding": {
+            "x": {"field": "Year"}, 
+            "y": {"value": -60},
+            "y2": {"value": 300}
+          }
+        },
+        {
+          "data": {"values": [{"Year": "2023", "label": "Post Pandemic Recovery"}]},
+          "mark": {"type": "text", "color": "#04c046", "fontSize": 12, "dy": -220, "align": "center","baseline": "bottom"},
+          "encoding": {
+            "x": {"field": "Year"},
+            "text": {"field": "label"}
+          }
+        }
+      ],
+      "resolve": {
+        "scale": {"y": "independent"}
+      }
+    },
+    {
+      "width": 670,
+      "height": "container",
+      "mark": {"type": "line", "color": "#4e8cdd", "strokeWidth": 3, "point": true},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "Average_Expenditure_per_Trip_Rm",
+          "type": "quantitative",
+          "title": "Average Expenditure per Trip (RM)"
+        },
+        "tooltip": [
+          {"field": "Year"},
+          {"field": "Average_Expenditure_per_Trip_Rm", "title": "Avg Expenditure (RM)","format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"grid": false}
+  }
+}
