@@ -6,6 +6,7 @@
   border-radius: 5px;
 }
 
+/* Titles */
 .page-title {
   text-align: center;
   font-size: 5.5em;
@@ -41,6 +42,7 @@
   font-family: Verdana, sans-serif;
 }
 
+/* Add spacing for explanation under each chart */
 .vis-description {
   margin-top: 30px;
   font-size: 1.5em;
@@ -50,6 +52,7 @@
   font-family: Verdana, sans-serif;
 }
 
+/* Headings inside chart containers */
 h3 {
   text-align: center;
   color: #0b7285;
@@ -58,6 +61,7 @@ h3 {
   font-family: Verdana, sans-serif;
 }
 
+/* Visualization Layout */
 .vis-row {
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +95,6 @@ h3 {
 
 .vis-box-small {
   width: 100%;
-  height: 350px;
+  height: 350px; /* ↓ Make chart smaller here */
 }
-
 
