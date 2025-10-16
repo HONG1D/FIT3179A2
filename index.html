@@ -21,10 +21,10 @@
         <!--Tittle -->
         <h1 class="page-title">Malaysia Domestic Tourism Analysis (2017 - 2023)</h1>
         <p class="page-subtitle">
-          Malaysia, a multicultural nation rich in heritage and natural. It remains one of Southeast Asia’s most popular travel destinations.<br>
-          This visualization explores Malaysia’s domestic tourism trends through three key perspectives. The National Domestic Tourism Trend <br>
-          section highlights yearly changes in total visitors and average expenditure per trip. The State Performance Matrix compares visitor's <br>
-          growth rate across states by years. Lastly, the State Economic Overview visualizes tourism receipts and visitor distribution across states.<br>
+          Malaysia, a multicultural nation rich in heritage and natural. 
+          It remains one of Southeast Asia’s most popular travel destinations.
+          This visualization explores Malaysia’s domestic tourism trends through three key perspectives 
+          (National Domestic Tourism Trend section, State Performance Matrix and State Economic Overview). 
           Together, these charts provide a comprehensive view of how tourism activity and performance vary across time and regions in Malaysia.
         </p>
 
@@ -32,25 +32,23 @@
         <section>
             <h2 class="section-title">Domestic Tourism Trend</h2>
             <p class="section-intro">
-                This section tracks Malaysia’s overall Domestic tourism performance from 2017 to 2023. The visualization highlights:<br>
+                This section highlights yearly changes in total visitors and average expenditure per trip.
             </p>
-            <ul class="section-intro">
-              <li>All three variables (Total Domestic Visitors, Total Expenditure, Average Expenditure per Trip) have a positive correlation.</li>
-              <li><b>2017–2019:</b> Malaysia’s domestic tourism grew steadily, indicating healthy expansion consistent with Malaysia’s strong economy.</li>
-              <li><b>2020–2021:</b> Pandemic collapse, visitor numbers fell ~73%, expenditure dropped ~82%, and average expenditure per trip declined ~18%.</li>
-              <li>
-                <b>2022–2023:</b> Domestic tourism recovery, although total visitors and expenditure have not yet returned to 2019’s peak, people are spending more per trip,
-                <span style="display:block; margin-left: 5.2em;">
-                  suggesting a shift toward higher-value leisure travel.
-                </span>
-              </li>       
-            </ul>
 
             <div class="vis-row">
                 <div class="vis-container-small">
                     <h3>Total Domestic Visitors and Expenditure Over Time</h3>
                     <div id="trend" class="vis-box-small"></div>
+
+                    <p class="vis-description ">
+                        From <b>2017 to 2019</b>, Malaysia’s domestic tourism expanded steadily. This reflects a healthy economy and growing interest in local travel.
+                        However, between <b>2020 and 2021</b>, the pandemic caused a sharp collapse. Visitor numbers fell by about 73%. Total expenditure dropped by 82%. Average spending per trip declined by 18%.
+                        In <b>2022 and 2023</b>, the sector began to recover. Although visitor numbers and total expenditure have yet to reach pre-pandemic peaks.
+                        Malaysians are spending more per trip suggesting a shift toward higher-value leisure experiences.
+                    </p>
+
                 </div>
+                
             </div>
         </section>
 
@@ -58,27 +56,17 @@
         <section>
             <h2 class="section-title">State Performance Matrix</h2>
             <p class="section-intro">
-                This section compares the performance of each state across multiple years. The visualization highlights:<br>
+                This section compares visitor's growth rate across states by years.
             </p>
-            <ul class="section-intro">
-              <li>
-                <b>Kuala Lumpur</b> and <b>Selangor</b> consistently record the darkest marks on the heatmap, indicating they attract the highest and most stable number of 
-                <span style="display:block; margin-left: 0.2em;">
-                  domestic visitors across all years.
-                </span>
-              </li> 
-              <li><b>Labuan</b>, <b>Perlis</b>, and <b>Putrajaya</b> remain among the states with the lowest visitor numbers due to their smaller population and tourism base.</li>
-              <li>The overall growth trend for most states follows a clear pattern: <i><b>positive</b>(2018–2019) → <b>negative</b>(2020–2021) → <b>strong positive</b>(2022) → <b>moderate positive</b>(2023)</i>.</li>
-              <li><b>2017–2019:</b> Most states experienced moderate positive growth reflecting a stable domestic tourism market.</li>
-              <li><b>2020–2021:</b> All states suffered a sharp decline in both visitor numbers and growth rates due to the COVID-19 pandemic and MCO.</li>
-              <li><b>2022:</b> A major rebound occurred following the easing of restrictions and government campaigns such as "Cuti-Cuti Malaysia".</li>
-              <li><b>2023:</b> Tourism activity stabilized, maintaining a healthy growth level and signaling a full domestic recovery phase.</li>
-            </ul>
-
+            
             <div class="vis-row">
                 <div class="vis-container">
                     <h3>Domestic Visitor Distribution for States by Year</h3>
                     <div id="heatmap" class="vis-box-small"></div>
+                    <p class="vis-description ">
+                       Kuala Lumpur and Selangor consistently record the darkest marks on the heatmap. This reflects that they are Malaysia’s primary urban and economic hubs.
+                       In contrast, Labuan, Perlis, and Putrajaya attract the fewest visitors. This might due to limited tourism infrastructure.
+                    </p>
                 </div>
             </div>
 
@@ -86,11 +74,20 @@
                 <div class="vis-container-small">
                     <h3>Full Overview Diverging Bar Chart</h3>
                     <div id="grouped-bar" class="vis-box-small"></div>
+                    <p class="vis-description ">
+                    The overall growth trend for most states follows a clear pattern: <i><b>positive</b>(2018–2019) → <b>negative</b>(2020–2021) → <b>strong positive</b>(2022) → <b>moderate positive</b>(2023)</i>.
+                    </p>
                 </div>
 
                 <div class="vis-container-small">
                     <h3> Filtered Diverging Bar Chart</h3>
                     <div id="filter-bar" class="vis-box-small"></div>
+                    <p class="vis-description ">
+                       From <b>2017 to 2019</b>, most states experienced steady growth in domestic tourism.
+                       A sharp decline occurred in <b>2020 and 2021</b> due to <span style="color: darkorange;">COVID-19 pandemic</span> and <span style="color: red;">MCO</span>.
+                       A strong rebound emerged in <b>2022</b> as restrictions eased and  <span style="color: rgb(190, 181, 7);">“Cuti-Cuti Malaysia Program”</span> encouraged travel.
+                       <b>2023</b> marked a period of stabilization and signaling a full <span style="color: #1410eb;">Post Pandemic Recovery</span> phase.
+                    </p>
                 </div>
             </div>
         </section>
@@ -99,19 +96,25 @@
         <section>
             <h2 class="section-title">State Economic Overview</h2>
             <p class="section-intro">
-                This section explores the tourism receipts and number of visitors across Malaysian states. The visualization highlights:<br> 
+                This section visualizes tourism receipts and visitor distribution across states.
+                Kuala Lumpur and Selangor serve as the main hubs of domestic tourism.
+                They dominate both visitor numbers and tourism receipts. 
+                In contrast, Labuan, Putrajaya, and Perlis attract fewer visitors and generate relatively lower receipts.
+                East Malaysian states of Sabah and Sarawak show strong tourism receipts relative to visitor numbers.
+                This suggest longer stays or higher average spending per trip. 
             </p>
-            <ul class="section-intro">
-              <li>Kuala Lumpur and Selangor are main hubs of domestic tourism as they dominate both color and circle size.</li>
-              <li>Labuan, Putrajaya, and Perlis display smaller circles and lighter colors indicating that they attract fewer visitors and generate relatively lower tourism receipts.</li>
-              <li>East Malaysian states such as Sabah and Sarawak demonstrate strong tourism receipts relative to the number of visitors, reflecting longer stays or higher average spending per trip.</li>
-              <li>Domestic tourism reflects a strong positive relationship between total visitors and total receipts meaning that destinations with more tourists generally generate higher revenue.</li>
-              <li>Kuala Lumpur appears as a noticeable outlier in the scatter plot, having an exceptionally high number of domestic visitors compared to other states.</li>
-            </ul>
+            
             <div class="vis-row">
                 <div class="vis-container">
-                    <h3>Map of Receipts and Visitors</h3>
-                    <div id="map" class="vis-box"></div>
+                    <h3>Malaysia Map of Receipts</h3>
+                    <div id="map1" class="vis-box"></div>
+                </div>
+            </div>
+
+            <div class="vis-row">
+                <div class="vis-container">
+                    <h3>Malaysia Map of Visitors</h3>
+                    <div id="map2" class="vis-box"></div>
                 </div>
             </div>
 
@@ -119,16 +122,27 @@
                 <div class="vis-container-small" style="flex: 2;">
                     <h3>Visitors vs Receipts Scatter Plot</h3>
                     <div id="scatter" class="vis-box-small"></div>
+                   
+                    <p class="vis-description">
+                        Domestic tourism reflects a <b>strong positive relationship</b> between total visitors and total receipts.
+                        Destinations attracting more tourists generally earning higher revenue.
+                        <b>Kuala Lumpur</b> stands out as an <b>outlier</b>.
+                        It recording exceptionally high visitor numbers compared to other states.
+                        However, it generating lower than expected receipts.
+                    </p>
                 </div>
             </div>
         </section>
 
         <p>
-        A visualization provided by De Hong Yi<br>
-        Resources: 
-        <a href="https://github.com/HONG1D/FIT3179A2" target="_blank">
-            https://github.com/HONG1D/FIT3179A2
-        </a>
+            A visualization provided by De Hong Yi<br>
+            GitHub: 
+            <a href="https://github.com/HONG1D/FIT3179A2" target="_blank">GitHub Repository</a> <br> 
+            Data Sources:
+            <a href="https://open.dosm.gov.my/publications/tourism_domestic_annual_2023" target="_blank">Domestic Tourism OpenDOSM</a> | 
+            <a href="https://open.dosm.gov.my/publications/tourism_domestic_state_2023" target="_blank">Domestic Tourism by state OpenDOSM</a> | 
+            <a href="https://www.kaggle.com/datasets/mypapit/malaysiancity" target="_blank">Malaysia States Coordinate Kaggle</a>
         </p>
+
     </div>
 </body>
