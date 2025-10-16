@@ -6,7 +6,7 @@
     "background": "#83d1f9",
     "view": {"stroke": "transparent"}
   },
-  "projection": {"type": "mercator", "center": [108.5, 3], "scale": 4100, "translate": [680, 330]},
+  "projection": {"type": "mercator", "center": [108.5, 3], "scale": 3700, "translate": [630, 330]},
   "layer": [
     { "data": { "sphere": {} }, "mark": { "type": "geoshape", "fill": "#83d1f9" } },
     { "data": { "graticule": { "step": [2, 2] } }, "mark": { "type": "geoshape", "stroke": "#7f96a4", "strokeWidth": 0.6, "opacity": 0.7 } },
