@@ -34,7 +34,7 @@
   ],
   "hconcat": [
     {
-      "width": 630,
+      "width": 600,
       "height": "container",
       "layer": [
         {
@@ -140,7 +140,7 @@
       }
     },
     {
-      "width": 650,
+      "width": 600,
       "height": "container",
       "mark": {"type": "line", "color": "#4e8cdd", "strokeWidth": 3, "point": true},
       "encoding": {
