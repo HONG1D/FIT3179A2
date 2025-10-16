@@ -42,7 +42,6 @@
   font-family: Verdana, sans-serif;
 }
 
-/* Add spacing for explanation under each chart */
 .vis-description {
   margin-top: 30px;
   font-size: 1.5em;
@@ -52,7 +51,6 @@
   font-family: Verdana, sans-serif;
 }
 
-/* Headings inside chart containers */
 h3 {
   text-align: center;
   color: #0b7285;
@@ -61,7 +59,6 @@ h3 {
   font-family: Verdana, sans-serif;
 }
 
-/* Visualization Layout */
 .vis-row {
   display: flex;
   flex-wrap: wrap;
@@ -71,21 +68,14 @@ h3 {
 
 .vis-container {
   flex: 1;
+  max-width: 90%; 
   min-width: 48%;
   background: white;
-  margin-bottom: 15px;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-}
-
-.vis-container-small {
-  flex: 1;
-  min-width: 30%;
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  margin: 0 auto;
+  margin-bottom:15px;
 }
 
 .vis-box {
@@ -95,6 +85,6 @@ h3 {
 
 .vis-box-small {
   width: 100%;
-  height: 350px; /* ↓ Make chart smaller here */
+  height: 350px; 
 }
 
