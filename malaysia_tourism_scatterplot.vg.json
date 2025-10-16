@@ -12,7 +12,7 @@
   "hconcat": [
     {
      
-      "width": 1350,
+      "width": 1230,
       "height": "container",
       "transform": [
         {"filter": "datum.Total_Domestic_Visitors_000 != null && datum.Receipts_RM_million != null"},
