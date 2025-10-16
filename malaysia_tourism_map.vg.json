@@ -21,21 +21,21 @@
           "from": {
             "data": {"url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/da9760377592d8db59e993d02fc949fed6ef419d/combined_state_info_location.csv"},
             "key": "State",
-            "fields": ["Total_Domestic_Visitors_000"]
+            "fields": ["Receipts_RM_million"]
           }
         }
       ],
       "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
         "color": {
-          "field": "Total_Domestic_Visitors_000",
+          "field": "Receipts_RM_million",
           "type": "quantitative",
-          "scale": {"scheme": "lighttealblue", "domain": [10000, 20000, 50000, 55000, 60000, 70000, 74000, 75000, 76000, 78000, 79000, 81000, 85000, 90000, 96000, 97000, 98000, 100000, 160000, 180000, 200000]},
-          "title": "Visitors (‘000)"
+          "scale": {"scheme": "lightorange", "domain": [2000, 4000, 15000, 20000, 23000, 26000, 30000, 32000, 33000, 34000, 36000, 37000, 38000, 40000, 41000, 55000, 56000, 58000, 60000]},
+          "title": ["Receipts", "(RM million)"]
         },
         "tooltip": [
           {"field": "properties.name", "title": "State"},
-          {"field": "Total_Domestic_Visitors_000", "title": "Visitors (‘000)","format": ","}
+          {"field": "Receipts_RM_million", "title": "Receipts(RM million)","format": ","}
         ]
       }
     },
@@ -45,7 +45,7 @@
       },
       "mark": {
         "type": "circle",
-        "color": "#f08d30"
+        "color": "#070809"
       },
       "encoding": {
         "longitude": {"field": "Longtitude", "type": "quantitative"},
@@ -62,8 +62,7 @@
         "type": "text",
         "dx": -51.5,
         "fontSize": 15,
-        "fontStyle": "italic",
-        "color": "#f08d30"
+        "fontStyle": "italic"
       },
       "encoding": {
         "longitude": {"field": "Longtitude", "type": "quantitative"},
@@ -74,4 +73,3 @@
     }
   ]
 }
-
