@@ -34,7 +34,7 @@
   ],
   "hconcat": [
     {
-      "width": 670,
+      "width": 630,
       "height": "container",
       "layer": [
         {
@@ -59,7 +59,7 @@
           }
         },
         {
-          "mark": {"type": "line", "color": "#ff9a15", "strokeWidth": 3, "point": true},
+          "mark": {"type": "line", "color": "#9e05f1", "strokeWidth": 3, "point": true},
           "encoding": {
             "x": {"field": "Year", "type": "ordinal"},
             "y": {
@@ -79,7 +79,7 @@
         },
         {
           "data": {"values": [{"Year": "2020", "label": "COVID-19 Pandemic"}]},
-          "mark": {"type": "text", "color": "darkorange", "fontSize": 12, "dy": -160, "align": "center","baseline": "bottom"},
+          "mark": {"type": "text", "color": "darkorange", "fontSize": 12, "dy": -180, "align": "center","baseline": "bottom"},
           "encoding": {
             "x": {"field": "Year"},
             "text": {"field": "label"}
@@ -94,7 +94,7 @@
         },
         {
           "data": {"values": [{"Year": "2021", "label": "MCO Phase"}]},
-          "mark": {"type": "text", "color": "red", "fontSize": 12, "dy": -110, "align": "center","baseline": "bottom"},
+          "mark": {"type": "text", "color": "red", "fontSize": 12, "dy": -130, "align": "center","baseline": "bottom"},
           "encoding": {
             "x": {"field": "Year"},
             "text": {"field": "label"}
@@ -102,16 +102,16 @@
         }, 
         {
           "data": {"values": [{"Year": "2022"}]},
-          "mark": {"type": "rule", "color": "#d5ce11", "strokeDash": [4, 4], "size": 2},
+          "mark": {"type": "rule", "color": "rgb(190, 181, 7)", "strokeDash": [4, 4], "size": 2},
           "encoding": {
             "x": {"field": "Year"}, 
             "y": {"value": -30},
-            "y2": {"value": 300}
+            "y2": {"value": 350}
           }
         },
         {
           "data": {"values": [{"Year": "2022", "label": "Cuti-Cuti Malaysia Program"}]},
-          "mark": {"type": "text", "color": "#d5ce11", "fontSize": 12, "dy": -190, "align": "center","baseline": "bottom"},
+          "mark": {"type": "text", "color": "rgb(190, 181, 7)", "fontSize": 12, "dy": -210, "align": "center","baseline": "bottom"},
           "encoding": {
             "x": {"field": "Year"},
             "text": {"field": "label"}
@@ -119,16 +119,16 @@
         }, 
         {
           "data": {"values": [{"Year": "2023"}]},
-          "mark": {"type": "rule", "color": "#04c046", "strokeDash": [4, 4], "size": 2},
+          "mark": {"type": "rule", "color": "#1410eb", "strokeDash": [4, 4], "size": 2},
           "encoding": {
             "x": {"field": "Year"}, 
             "y": {"value": -60},
-            "y2": {"value": 300}
+            "y2": {"value": 350}
           }
         },
         {
           "data": {"values": [{"Year": "2023", "label": "Post Pandemic Recovery"}]},
-          "mark": {"type": "text", "color": "#04c046", "fontSize": 12, "dy": -220, "align": "center","baseline": "bottom"},
+          "mark": {"type": "text", "color": "#1410eb", "fontSize": 12, "dy": -240, "align": "center","baseline": "bottom"},
           "encoding": {
             "x": {"field": "Year"},
             "text": {"field": "label"}
@@ -140,7 +140,7 @@
       }
     },
     {
-      "width": 670,
+      "width": 650,
       "height": "container",
       "mark": {"type": "line", "color": "#4e8cdd", "strokeWidth": 3, "point": true},
       "encoding": {
@@ -157,11 +157,12 @@
         },
         "tooltip": [
           {"field": "Year"},
-          {"field": "Average_Expenditure_per_Trip_Rm", "title": "Avg Expenditure (RM)","format": ","}
+          {"field": "Average_Expenditure_per_Trip_Rm", "title": "Average Expenditure (RM)","format": ","}
         ]
       }
     }
   ],
+  "spacing": 45,
   "config": {
     "view": {"stroke": "transparent"},
     "axis": {"grid": false}
