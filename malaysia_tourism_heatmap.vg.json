@@ -104,7 +104,7 @@
     },
 
     {
-      "mark": {"type": "rule", "color": "#d5ce11", "strokeDash": [4, 4]},
+      "mark": {"type": "rule", "color": "rgb(190, 181, 7)", "strokeDash": [4, 4]},
       "encoding": {
         "x": {"datum": "2022"}
       }
@@ -117,7 +117,7 @@
         "align": "center",
         "baseline": "bottom",
         "dy": -15,       
-        "color": "#d5ce11",
+        "color": "rgb(190, 181, 7)",
         "fontSize": 12
       },
       "encoding": {
@@ -127,7 +127,7 @@
     },
 
     {
-      "mark": {"type": "rule", "color": "#04c046", "strokeDash": [4, 4]},
+      "mark": {"type": "rule", "color": "#1410eb", "strokeDash": [4, 4]},
       "encoding": {
         "x": {"datum": "2023"}
       }
@@ -140,7 +140,7 @@
         "align": "center",
         "baseline": "bottom",
         "dy": -15,       
-        "color": "#04c046",
+        "color": "#1410eb",
         "fontSize": 12
       },
       "encoding": {
