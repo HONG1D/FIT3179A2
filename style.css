@@ -2,48 +2,62 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 30px 10px;
+  background-color:rgb(234, 250, 251);
+  border-radius: 5px;
 }
 
-/* Titles */
 .page-title {
   text-align: center;
-  font-size: 3.3em;
+  font-size: 5.5em;
   color: #034f84;
   margin-bottom: 5px;
+  font-family: 'Times New Roman', serif;
 }
 
 .page-subtitle {
-  text-align: center;
+  text-align: left;
   color: #666;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 1.5em;
+  font-family: Verdana, sans-serif;
+  font-size: 2em;
   word-wrap: break-word; 
 }
 
 .section-title {
-  font-size: 2em;
+  font-size: 3.5em;
   color: #023e73;
   text-align: left;
   border-left: 5px solid #0b7285;
   padding-left: 10px;
   margin-bottom: 0.4em;
   margin-top: 1.1em;
+  font-family: 'Times New Roman', serif;
 }
 
 .section-intro {
-  font-size: 1.3em;
+  font-size: 2em;
   color: #444;
   line-height: 1.6;
   margin: 0.3em 0;
+  font-family: Verdana, sans-serif;
 }
 
-.section-intro + ul {
-  margin-top: 0.4em;
-  margin-bottom: 1.4em;
+.vis-description {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #666;
+  line-height: 1.4;
+  text-align: left;
+  font-family: Verdana, sans-serif;
 }
 
-/* Visualization Layout */
+h3 {
+  text-align: center;
+  color: #0b7285;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  font-family: Verdana, sans-serif;
+}
+
 .vis-row {
   display: flex;
   flex-wrap: wrap;
@@ -72,27 +86,11 @@
 
 .vis-box {
   width: 100%;
-  height: 550px; /* ↓ Make chart smaller here */
+  height: 500px;
 }
 
 .vis-box-small {
   width: 100%;
-  height: 300px; /* ↓ Make chart smaller here */
+  height: 350px;
 }
 
-/* Add spacing for explanation under each chart */
-.vis-description {
-  margin-top: 10px;
-  font-size: 1.3em;
-  color: #000000;
-  line-height: 1;
-  text-align: left;
-}
-
-/* Headings inside chart containers */
-h3 {
-  text-align: center;
-  color: #0b7285;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
