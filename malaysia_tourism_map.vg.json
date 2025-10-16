@@ -6,64 +6,64 @@
     "background": "#83d1f9",
     "view": {"stroke": "transparent"}
   },
-  "projection": {"type": "mercator", "center": [108.5, 3], "scale": 3800, "translate": [630, 330]},
+  "projection": {"type": "mercator", "center": [108.5, 3], "scale": 4100, "translate": [680, 330]},
   "layer": [
+    { "data": { "sphere": {} }, "mark": { "type": "geoshape", "fill": "#83d1f9" } },
+    { "data": { "graticule": { "step": [2, 2] } }, "mark": { "type": "geoshape", "stroke": "#7f96a4", "strokeWidth": 0.6, "opacity": 0.7 } },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/92e3ceedc40db9537f969f440562815696e0a7bf/malaysia.json",
+        "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/f012552a47bf03998f2e2d441e30c494e45eaa49/updated_malaysia.json",
         "format": {"type": "topojson", "feature": "mytopojson"}
       },
       "transform": [
         {
           "lookup": "properties.name",
           "from": {
-            "data": {"url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/ed55118914fd0d746142947c9c107f2694128083/combined_state_info_location.csv"},
+            "data": {"url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/da9760377592d8db59e993d02fc949fed6ef419d/combined_state_info_location.csv"},
             "key": "State",
-            "fields": ["Receipts_RM_million"]
+            "fields": ["Total_Domestic_Visitors_000"]
           }
         }
       ],
       "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
         "color": {
-          "field": "Receipts_RM_million",
+          "field": "Total_Domestic_Visitors_000",
           "type": "quantitative",
-          "scale": {"scheme": "greens"},
-          "title": "Receipts (RM million)"
+          "scale": {"scheme": "lighttealblue", "domain": [10000, 20000, 50000, 55000, 60000, 70000, 74000, 75000, 76000, 78000, 79000, 81000, 85000, 90000, 96000, 97000, 98000, 100000, 160000, 180000, 200000]},
+          "title": "Visitors (‘000)"
         },
         "tooltip": [
           {"field": "properties.name", "title": "State"},
-          {"field": "Receipts_RM_million", "title": "Receipts (RM million)","format": ","}
-        ]
-      }
-    },
-    {
-      "data": {"url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/ed55118914fd0d746142947c9c107f2694128083/combined_state_info_location.csv"},
-      "mark": {"type": "circle", "color": "orange", "opacity": 0.6},
-      "encoding": {
-        "longitude": {"field": "Longtitude", "type": "quantitative"},
-        "latitude": {"field": "Latitude", "type": "quantitative"},
-        "size": {
-          "field": "Total_Domestic_Visitors_000",
-          "type": "quantitative",
-          "scale": {"range": [100, 4000]},
-          "title": "Domestic Visitors ('000)"
-        },
-        "tooltip": [
-          {"field": "State", "title": "State"},
-          {"field": "Total_Domestic_Visitors_000", "title": "Visitors ('000)","format": ","}
+          {"field": "Total_Domestic_Visitors_000", "title": "Visitors (‘000)","format": ","}
         ]
       }
     },
     {
        "data": {
-        "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/ed55118914fd0d746142947c9c107f2694128083/combined_state_info_location.csv"
+        "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/da9760377592d8db59e993d02fc949fed6ef419d/combined_state_info_location.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#f08d30"
+      },
+      "encoding": {
+        "longitude": {"field": "Longtitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "text": {"field": "State", "type": "nominal"}
+      }
+
+    },
+    {
+       "data": {
+        "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/da9760377592d8db59e993d02fc949fed6ef419d/combined_state_info_location.csv"
       },
       "mark": {
         "type": "text",
-        "dx": -32,
-        "fontSize": 12,
-        "fontStyle": "italic"
+        "dx": -51.5,
+        "fontSize": 15,
+        "fontStyle": "italic",
+        "color": "#f08d30"
       },
       "encoding": {
         "longitude": {"field": "Longtitude", "type": "quantitative"},
