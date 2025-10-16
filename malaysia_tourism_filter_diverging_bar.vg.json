@@ -3,16 +3,20 @@
   "data": {
     "url": "https://raw.githubusercontent.com/HONG1D/FIT3179A2/92e3ceedc40db9537f969f440562815696e0a7bf/long_format_state_visitor_yearly_info.csv"
   },
-  "transform": [
-    {"filter": "datum.Year != 2017"}
-  ],
   "params": [
     {
-      "name": "YearSelection",
-      "select": {"type": "point", "fields": ["Year"]},
-      "bind": "legend"
+      "name": "YearFilter",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2018,
+        "max": 2023,
+        "step": 1,
+        "name": "Filter by Year: "
+      }
     }
   ],
+  "transform": [{"filter": "datum.Year == YearFilter"}],
   "mark": {"type": "bar", "cornerRadiusEnd": 3},
   "width": "container",
   "height": 200,
@@ -27,20 +31,13 @@
       "field": "Growth_Rate",
       "type": "quantitative",
       "title": "Growth Rate (%)",
-      "scale": {"domain": [-100, 300]}
+      "scale": {"domain": [-100, 200]}
     },
-    "xOffset": {"field": "Year"},
     "color": {
-      "field": "Year",
-      "type": "ordinal",
-      "scale": {
-        "range": ["#0072B2", "#D55E00", "#C10020", "#595959", "#7C4700", "#F0E442"]
-      },
-      "legend": {"title": "Year"}
-    },
-    "opacity": {
-      "condition": {"param": "YearSelection", "value": 1},
-      "value": 0.2
+      "field": "Growth_Rate",
+      "type": "quantitative",
+      "scale": {"scheme": "redblue", "domain": [-100, 100]},
+      "legend": {"title": "Growth Rate (%)"}
     },
     "tooltip": [
       {"field": "State", "type": "nominal"},
