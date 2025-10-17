@@ -45,7 +45,7 @@
       },
       "mark": {
         "type": "circle",
-        "color": "#f08d30"
+        "color": "#ff4000"
       },
       "encoding": {
         "longitude": {"field": "Longtitude", "type": "quantitative"},
@@ -63,7 +63,7 @@
         "dx": -51.5,
         "fontSize": 15,
         "fontStyle": "italic",
-        "color": "#f08d30"
+        "color": "#ff4000"
       },
       "encoding": {
         "longitude": {"field": "Longtitude", "type": "quantitative"},
@@ -74,4 +74,5 @@
     }
   ]
 }
+
 
